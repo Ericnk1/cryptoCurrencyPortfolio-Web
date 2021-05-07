@@ -1,0 +1,42 @@
+<mat-toolbar>
+  <span>Add new portfolio</span>
+</mat-toolbar>
+
+<mat-card class="my-card">
+  <mat-card-content>
+    <form class="my-form" [formGroup]="form" (ngSubmit)="add()">
+      <mat-form-field appearance="fill" class="example-full-width">
+        <mat-label>Currency</mat-label>
+        <!--<label>
+          <input formControlName="currency" matInput type="text" placeholder="Currency" required>
+        </label>-->
+        <mat-select formControlName="currency" required>
+          <mat-option *ngFor="let currency of currencies" [value]="currency">{{currency}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="example-full-width">
+        <mat-label>Amount</mat-label>
+        <label>
+          <input formControlName="amount" matInput type="number" placeholder="Amount" required>
+        </label>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="example-full-width">
+        <mat-label>Wallet Location</mat-label>
+        <!--<label>
+          <input formControlName="walletLocation" matInput type="text" placeholder="Wallet Location" required>
+        </label>-->
+        <mat-select formControlName="walletLocation" required>
+          <mat-option *ngFor="let wallet of wallets" [value]="wallet">{{wallet}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-card-actions>
+        <button mat-raised-button color="primary" [disabled]="form.invalid">Register</button>
+        <button (click)="back()" color="warn" mat-raised-button>BACK</button>
+      </mat-card-actions>
+    </form>
+  </mat-card-content>
+</mat-card>
+

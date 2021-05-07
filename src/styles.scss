@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+body {
+  padding-top: 140px;
+  background-color: #343a40;
+  background-image: url("~/assets/img.png");
+}
+
+/*td:first-child {
+  font-weight: bold
+}*/
+
+td:last-child {
+  font-weight: bold
+}
+
+td:nth-last-child(2) {
+  font-weight: bold
+}
+
+th {
+  font-weight: bold
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
+.container {
+  margin: 20px;
+  display:flex;
+}
+
+mat-toolbar-row{
+  font-weight: bolder;
+}
+
