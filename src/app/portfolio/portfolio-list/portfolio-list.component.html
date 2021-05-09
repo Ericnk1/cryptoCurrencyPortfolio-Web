@@ -11,37 +11,37 @@
   <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
 
     <ng-container matColumnDef="currency">
-      <th scope="col" mat-header-cell *matHeaderCellDef mat-sort-header><strong> Currency</strong>  </th>
+      <th scope="col" mat-header-cell *matHeaderCellDef mat-sort-header><h3><strong> Currency</strong></h3> </th>
       <td mat-cell *matCellDef="let portfolio"> {{portfolio.currency}} </td>
     </ng-container>
 
     <ng-container matColumnDef="amount">
-      <th scope="col" mat-header-cell *matHeaderCellDef mat-sort-header><strong>Amount</strong>  </th>
+      <th scope="col" mat-header-cell *matHeaderCellDef mat-sort-header> <h3><strong>Amount</strong></h3> </th>
       <td mat-cell *matCellDef="let portfolio"> {{portfolio.amount}} </td>
     </ng-container>
 
     <ng-container matColumnDef="dateOfPurchase">
-      <th scope="col" mat-header-cell *matHeaderCellDef mat-sort-header><strong>Date Of Purchase</strong>  </th>
+      <th scope="col" mat-header-cell *matHeaderCellDef mat-sort-header><h3><strong>Date Of Purchase</strong></h3> </th>
       <td mat-cell *matCellDef="let portfolio"> {{portfolio.dateOfPurchase}} </td>
     </ng-container>
 
     <ng-container matColumnDef="walletLocation">
-      <th scope="col" mat-header-cell *matHeaderCellDef mat-sort-header><strong>Wallet Location</strong>  </th>
+      <th scope="col" mat-header-cell *matHeaderCellDef mat-sort-header><h3><strong>Wallet Location</strong></h3> </th>
       <td mat-cell *matCellDef="let portfolio"> {{portfolio.walletLocation}} </td>
     </ng-container>
 
     <ng-container matColumnDef="euroValue">
-      <th scope="col" mat-header-cell *matHeaderCellDef mat-sort-header><strong>Value when purchased</strong>  </th>
+      <th scope="col" mat-header-cell *matHeaderCellDef mat-sort-header><h3><strong>Value when purchased</strong></h3> </th>
       <td mat-cell *matCellDef="let portfolio"> {{portfolio.euroValue}}  €</td>
     </ng-container>
 
     <ng-container matColumnDef="currentEuroValue">
-      <th scope="col" mat-header-cell *matHeaderCellDef mat-sort-header><strong>Current Value</strong>  </th>
+      <th scope="col" mat-header-cell *matHeaderCellDef mat-sort-header><h3><strong>Current Value</strong></h3> </th>
       <td mat-cell *matCellDef="let portfolio"> {{portfolio.currentEuroValue}}  €</td>
     </ng-container>
 
     <ng-container matColumnDef="profitLostEuroValue">
-      <th scope="col" mat-header-cell *matHeaderCellDef mat-sort-header><strong>Profit / Lost</strong>  </th>
+      <th scope="col" mat-header-cell *matHeaderCellDef mat-sort-header><h3><strong>Profit / Lost</strong></h3> </th>
       <td mat-cell *matCellDef="let portfolio" [ngClass]=" {'low' : portfolio.profitLostEuroValue < 0,  'high' : portfolio.profitLostEuroValue > 0}"> {{portfolio.profitLostEuroValue}} €</td>
     </ng-container>
 

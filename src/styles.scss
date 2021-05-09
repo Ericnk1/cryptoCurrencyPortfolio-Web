@@ -8,19 +8,15 @@ body {
   background-image: url("~/assets/img.png");
 }
 
-/*td:first-child {
+td:first-child {
   font-weight: bold
-}*/
+}
 
 td:last-child {
   font-weight: bold
 }
 
 td:nth-last-child(2) {
-  font-weight: bold
-}
-
-th {
   font-weight: bold
 }
 
