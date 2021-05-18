@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: 'portfolio-list', component: PortfolioListComponent},
   {path: 'update-portfolio/:id', component: UpdatePortfolioComponent},
   {path: 'add-portfolio', component: AddPortfolioComponent},
-  {path: 'home', component: HeaderComponent}
+  {path: 'home', component: PortfolioListComponent}
 ];
 
 @NgModule({
