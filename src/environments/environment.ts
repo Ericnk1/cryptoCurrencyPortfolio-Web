@@ -7,7 +7,7 @@ export const environment = {
   production: false,
   development: true,
   environmentName: 'DEV',
-  baseURL: 'https://cryptocurrencyapp-7e382dbd722c.herokuapp.com/'  // 'http://localhost:8080/'
+  baseURL: 'https://cryptocurrencyapp-7e382dbd722c.herokuapp.com/'
 };
 
 /*
