@@ -1,8 +1,5 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "cdf5073e-9ff1-428d-8754-5eafa99d6159"
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -16,9 +13,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": [
-              "lodash"
-            ],
             "outputPath": "dist/cryptocurrency-porfolio-web",
             "index": "src/index.html",
             "main": "src/main.ts",
